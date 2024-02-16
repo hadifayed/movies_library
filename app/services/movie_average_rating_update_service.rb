@@ -19,6 +19,6 @@ class MovieAverageRatingUpdateService
   end
 
   def calculate_new_average_rating_for_movie
-    ((@review.movie.average_rating * @review.movie.reviews_count) + @review.rating) / (@review.movie.reviews_count + 1)
+    ((@review.movie.average_rating * @review.movie.reviews_count) + @review.rating) / (@review.movie.reviews_count + 1).to_f
   end
 end
