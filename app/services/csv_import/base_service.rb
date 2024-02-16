@@ -2,8 +2,8 @@ require 'csv'
 
 module CsvImport
   class BaseService
-    def initialize(file_name)
-      @file_path = Rails.root.join(file_name)
+    def initialize(file_path)
+      @file_path = file_path
     end
   
     def process_file

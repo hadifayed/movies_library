@@ -7,3 +7,5 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+CsvImport::MovieActorLocationDataService.new(Rails.root.join('db', 'seed_data', 'movies.csv')).process_file
+CsvImport::UserReviewDataService.new(Rails.root.join('db', 'seed_data', 'reviews.csv')).process_file
