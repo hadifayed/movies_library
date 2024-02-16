@@ -1,24 +1,16 @@
 # movies_library
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+a simple app used to parse csv files for movies and their corresponding data
 
-Things you may want to cover:
+run the following commands to run the app :
+    1 - `docker compose up --build`
+    2 - `docker compose exec web bundle exec rails db:seed`
 
-* Ruby version
+endpoint to list all movies order by their average rating : `/movies`
 
-* System dependencies
+Missing Requirement : add an endpoint to find the actor (due to time limitation)
 
-* Configuration
+ares of improvement : 
+    1 - add a background processor to process some logic to improve performance
+    2 - edit association to get all the needed data instead of just distinct ones
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
