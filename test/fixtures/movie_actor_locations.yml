@@ -1,0 +1,9 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  movie_actor: one
+  location: one
+
+two:
+  movie_actor: two
+  location: two
